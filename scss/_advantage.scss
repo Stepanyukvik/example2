@@ -1,0 +1,142 @@
+.container {
+    padding-left: 45px;
+    padding-right: 45px;
+
+    @media screen and (min-width:768px) {
+        padding-left: 76px;
+        padding-right: 76px;
+    }
+
+    @media screen and (min-width:768px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.section--advantage {
+    padding-top: 116px;
+    padding-bottom: 32px;
+    background-color: #84A178;
+}
+
+ul,
+p {
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.advantage__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 80px;
+        } 
+    
+    @media screen and (min-width: 1200px) {
+        gap: 32px;
+        }     
+}
+
+.advantage__item {
+     position: relative;
+
+     @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 160px) / 3);
+        } 
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 64px) / 3);
+        } 
+}    
+
+.advantage__item:not(:last-child) .advantage__text {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 94px;
+      } 
+}
+
+.advantage__ammount {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.22;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+
+    margin-bottom: 16px;
+}
+
+.benefits__cow::before {
+    position: absolute;
+    top: -66px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    content:'';
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/cow@1x.png);
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../img/cow@2x.png);
+    }
+}   
+
+.benefits__weight::before {
+    position: absolute;
+    top: -66px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    content:'';
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/weight@1x.png);
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../img/weight@2x.png);
+    }
+} 
+
+.benefits__ice::before {
+    position: absolute;
+    top: -66px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    content:'';
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/ice@1x.png);
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../img/ice@2x.png);
+    }
+} 
+
+.advantage__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+    color: #FCFCFC;
+}
+
